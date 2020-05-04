@@ -255,3 +255,10 @@ grids:
                 ny: 1
                 oasis_grid_type: "U"
 
+                
+preprocess:
+        arbitrary_name:
+                method: /work/ollie/dbarbi/preprocess_plugin/someshellscript.sh -o option1
+                type: shell
+
+
