@@ -148,10 +148,10 @@ components:
                 clean_command: "rm -rf bin/fesom.x.ini mesh_part/build mesh_part/CMakeCache.txt"
 
         "icon":
-                git-repository: "gitlab.dkrz.de/modular_esm/ICON-ATM.git"
+                git-repository: "https://gitlab.dkrz.de/modular_esm/ICON-ATM.git"
                 branch: "${icon.version}"
                 conf_command: "./configure --with-fortran=gcc --with-openmp --with-grib_api"
-                comp_command: "make -j `nproc --all"
+                comp_command: "make -j `nproc --all`"
                 clean_command: "make distclean"
                 available_versions:
                         - "2.1.0"

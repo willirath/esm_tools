@@ -1,11 +1,11 @@
 general:
     setup_name: "awicm"
-    compute_time: "00:15:00"
+    compute_time: "01:00:00"
     initial_date: "2000-01-01"
-    final_date: "2000-03-31"
+    final_date: "2000-12-31"
     base_dir: "/work/ollie/dbarbi/esm_yaml_test/"
-    nmonth: 1
-    nyear: 0
+    nmonth: 0
+    nyear: 1
 
 awicm:
     version: "2.0"
@@ -19,6 +19,11 @@ fesom:
     pool_dir: "/work/ollie/pool/FESOM/"
     mesh_dir: "/work/ollie/dsidoren/input/fesom2.0/meshes/mesh_CORE2_finaltopo_mean/"
     restart_rate: 1
-    restart_unit: "m"
+    restart_unit: "y"
     restart_first: 1
     lresume: 0
+
+
+echam:
+    restart_rate: 1
+    restart_unit: "years"
