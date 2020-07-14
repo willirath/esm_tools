@@ -1,0 +1,38 @@
+general:
+        setup_name: echam
+        account: aa0238
+        compute_time: "08:00:00"
+        post_time: "01:00:00"
+
+        initial_date: "1850-01-01"
+        final_date: "1949-12-31"
+
+        base_dir: "/work/aa0238/a270118/Experiments"
+
+        nyear: 1
+
+echam:
+        scenario: "PI-CTRL"
+        version: "6.3.04p1"
+        model_dir: "pf/a/a270118/esm-master/echam-${version}"
+        bin_dir: ${model_dir}/src/echam/bin/HICE_thickness
+        namelist_dir: "pf/a/a270118/esm-master/esm-runscripts/namelists/echam/6.3.04p1/Sara"
+        #pool_dir: /pool/data
+        resolution: T127
+        ocean_resolution: TP04
+        levels: L95
+
+        lresume: False
+        nproca: 24
+        nprocb: 48
+
+        add_forcing_sources:
+                pisst: /work/aa0238/a270118/SST_SIC_Forcing/T127_HadNOAAOI_SST_LAMO.nc
+                pisic: /work/aa0238/a270118/SST_SIC_Forcing/T127_HadNOAAOI_SIC_HICE.nc
+
+
+jsbach:
+        namelist_dir: "pf/a/a270118/esm-master/esm-runscripts/namelists/jsbach/3.20/Sara"
+        dynveg: False
+
+
