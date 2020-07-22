@@ -1,0 +1,11 @@
+available_versions:
+- 2.0-esm-interface-oasis
+- 2.0-esm-interface-yac
+
+choose_version:
+  '2.0-esm-interface-oasis':
+    couplings:
+    - 'fesom-2.0-esm-interface-oasis+echam-6.3.04p1-esm-interface-oasis'
+  '2.0-esm-interface-yac':
+    couplings:
+    - 'fesom-2.0-esm-interface-yac+echam-6.3.04p1-esm-interface-yac'

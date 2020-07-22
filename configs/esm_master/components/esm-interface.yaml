@@ -1,12 +1,13 @@
 available_versions:
 - '1.0'
 - yac
+- oasis
 choose_version:
   '1.0':
     branch: dev_prototype_awicm
     comp_command: mkdir -p build; cd build; cmake ..; make -j `nproc --all`
-  yac:
-    branch: include_yac
+  generic:
+    branch: generic
     comp_command: mkdir -p build; cd build; cmake ..; make -j `nproc --all`
 comp_command: ${default.comp_command}
 destination: esm-interface

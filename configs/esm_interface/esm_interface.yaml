@@ -1,5 +1,11 @@
 model: esm-interface
 
+config_files:
+    esmnamelist:  esmnamelist
+
+config_sources:
+    esmnamelist:  "/work/ollie/nwieters/ESM/Test_esm_tools/esm_experiments/mynamelists/namelist.esmcouple"
+
 metadata:
         Institute: Alfred Wegener Institute
         Description: Coupling interface for a modular coupling approach of ESMs.
