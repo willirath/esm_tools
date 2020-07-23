@@ -11,4 +11,4 @@ choose_version:
     comp_command: mkdir -p build; cd build; cmake ..; make -j `nproc --all`
 comp_command: ${default.comp_command}
 destination: esm-interface
-git-repository: https://gitlab.dkrz.de/modular_esm/esm-interfaces.git
+git-repository: https://gitlab.dkrz.de/modular_esm/esm-interface.git
