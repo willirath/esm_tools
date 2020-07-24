@@ -1,7 +1,6 @@
 available_versions:
 - '1.0'
-- yac
-- oasis
+- generic
 choose_version:
   '1.0':
     branch: dev_prototype_awicm
