@@ -1,10 +1,14 @@
 model: esm-interface
 
+namelist_dir: "${esm_namelist_dir}/esm-interface/"
+namelists:
+        - namelist.esmcouple
+
 config_files:
-    esmnamelist:  esmnamelist
+        config: config
 
 config_sources:
-    esmnamelist:  "/work/ollie/nwieters/ESM/Test_esm_tools/esm_experiments/mynamelists/namelist.esmcouple"
+        config: "${namelist_dir}/namelist.esmcouple"
 
 metadata:
         Institute: Alfred Wegener Institute
